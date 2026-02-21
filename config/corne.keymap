@@ -77,7 +77,7 @@
 
             bindings = <
 &trans    &trans    &trans     &trans     &trans        &bootloader   &ext_power EP_OFF  &kp C_BRI_DN  &kp C_BRI_UP  &ext_power EP_ON
-&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &reset        &kp C_PREV         &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &sys_reset    &kp C_PREV         &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      
 &trans    &kp RALT  &trans     &trans     &trans        &out OUT_BLE  &bt BT_SEL 0       &bt BT_PRV    &bt BT_NXT    &bt BT_CLR      
                             &trans     &trans     &trans        &kp C_STOP    &kp C_PLAY         &kp C_MUTE
             >;
