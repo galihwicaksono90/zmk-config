@@ -12,19 +12,6 @@
 /*         keymap { */
 /*                 compatible = "zmk,keymap"; */
 /**/
-/*                 default_layer { */
-/* // ----------------------------------------------------------------------------------------- */
-/* // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC | */
-/* // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   | */
-/* // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  | */
-/* //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT | */
-/*                         bindings = < */
-/*    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC */
-/*    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT */
-/*    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC */
-/*                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT */
-/*                         >; */
-/*                 }; */
 /*                 lower_layer { */
 /* // ----------------------------------------------------------------------------------------- */
 /* // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC | */
@@ -91,6 +78,7 @@
     keymap {
         compatible = "zmk,keymap";
 
+
         colemak {
 // --------------------------------------------------------------------------------------------------------------
 // |   Q    |   W    |     F     |     P     |     B     | # |     J     |    L     |    U    |    Y   |   '    |
@@ -132,10 +120,10 @@
 //                     | HELD  |       |      | # | STOP     | PLAY   | MUTE   |
 
             bindings = <
-&trans    &trans    &trans     &trans     &trans        &bootloader   &ext_power EP_OFF  &cp C_BRI_DN  &cp C_BRI_UP  &ext_power EP_ON
-&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &reset        &cp C_PREV         &cp C_VOL_DN  &cp C_VOL_UP  &cp C_NEXT      
+&trans    &trans    &trans     &trans     &trans        &bootloader   &ext_power EP_OFF  &kp C_BRI_DN  &kp C_BRI_UP  &ext_power EP_ON
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &reset        &kp C_PREV         &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      
 &trans    &kp RALT  &trans     &trans     &trans        &out OUT_BLE  &bt BT_SEL 0       &bt BT_PRV    &bt BT_NXT    &bt BT_CLR      
-                            &trans     &trans     &trans        &cp C_STOP    &cp C_PLAY         &cp C_MUTE
+                            &trans     &trans     &trans        &kp C_STOP    &kp C_PLAY         &kp C_MUTE
             >;
         };
 
