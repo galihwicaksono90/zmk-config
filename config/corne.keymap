@@ -6,12 +6,11 @@
 
 // Layer Definitions
 #define COLEMAK 0
-#define LAYERS 1
-#define NAV 2
-#define MEDIA 3
-#define NUM 4
-#define SYM 5
-#define FN 6
+#define NAV 1
+#define MEDIA 2
+#define NUM 3
+#define SYM 4
+#define FN 5
 
 // Behavior configuration
 &mt {
@@ -46,7 +45,7 @@
 &kp Q       &kp W       &kp F          &kp P          &kp B                &kp J          &kp L         &kp U          &kp Y         &kp SQT    
 &mt LGUI A  &mt LALT R  &mt LCTRL S    &mt LSHFT T    &kp G                &kp M          &mt LSHFT N   &mt LCTRL E    &mt LALT I    &mt LGUI O 
 &kp Z       &mt RALT X  &kp C          &kp D          &kp V                &kp K          &kp H         &kp CMMA       &mt RALT DOT  &kp FSLH   
-                                    &lt MEDIA ESC  &lt NAV SPACE  &kp NAV TAB        &lt SYM ENTER  &lt NUM BSPC  &lt FN DEL
+                                    &lt MEDIA ESC  &lt NAV SPACE  &lt NAV TAB        &lt SYM ENTER  &lt NUM BSPC  &lt FN DEL
             >;
         };
 
